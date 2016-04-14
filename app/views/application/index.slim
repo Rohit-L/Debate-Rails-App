@@ -1,0 +1,13 @@
+#content
+  h1 Users
+
+  - unless @users.empty?
+    table
+      - @users.each do |user|
+        tr
+          td.name = user.name
+          td.price = user.email
+  - else
+    p
+     | No items found.  Please add some inventory.
+       Thank you!
