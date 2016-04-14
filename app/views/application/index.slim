@@ -1,13 +1,13 @@
 #content
-  h1 Users
+  h1 Queries
 
-  - unless @users.empty?
+  - unless @queries.empty?
     table
-      - @users.each do |user|
+      - @queries.each do |query|
         tr
-          td.name = user.name
-          td.price = user.email
+          td.question = query.question
+          td.time = query.created_at
   - else
     p
-     | No items found.  Please add some inventory.
+     | No queries found.  Please add some inventory.
        Thank you!
